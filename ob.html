@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            var car = {
+                model : "tesla",
+                brand : "9900",
+                price : 3400,
+                
+                teslaAutoPilot : function(){
+                    document.write("<h1>this car is auto pilot</h1>");
+                }
+            }
+            car.fuel = "Electric";
+            car.teslaAutoPilot();
+            delete car.price;
+            document.write("<h1>" + car.price + "</h1>");
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+
+</html>
