@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            function fn1(){
+                var user = document.getElementById("name").value;
+                // var pass = document.getElementById("pass");
+                //regex // i makes case insensitive
+                var regx = /E00/i;
+                if(regx.test(user)){
+                    // alert(regx.test(user));
+                    true;    
+                }
+                else{
+                    // alert(regx.test(user));
+                    document.getElementById("lb").style.visibility="visible";
+                    return false;
+                }
+            }
+                
+        </script>
+
+    </head>
+    <body>
+        <form action = "tag_name.html" onsubmit = "return fn1()">
+            <input id="name" placeholder="username" type="text"/>
+            <label id="lb" style="color:red;visibility: hidden;">Invalid Username</label><br><br>
+            <!-- <input id="pass" placeholder="password" type="password" required><br><br> -->
+            <button type = "submit" onclick = "fn1()" id = "bt">submit</button>
+        </form>
+    </body>
+
+</html>
