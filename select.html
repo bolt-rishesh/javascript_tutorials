@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            function fn(){
+                var sel = document.getElementById("selbox");
+                alert(sel.options[sel.selectedIndex].value);
+            }
+        </script>
+
+    </head>
+    <body>
+        <select id="selbox">
+            <option value="username">username</option>
+            <option value="password">password</option>
+        </select>
+        <br><br>
+        <button onclick="fn()" id="btn" >Click me</button>
+    </body>
+
+</html>
