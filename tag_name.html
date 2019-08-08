@@ -4,19 +4,24 @@
         <script type="text/javascript">
             function fn(){
                 var para = document.getElementsByTagName("p");
-                para[0].style.color = "red";
-                para[1].style.fontSize = 34;
-                para[2].style.fontWeight = "bolt";
-                para[3].style.fontStyle = "italic";
+                // para[0].style.color = "red";
+                // para[1].style.fontSize = 34;
+                // para[2].style.fontWeight = "bolt";
+                // para[3].style.fontStyle = "italic";
+
+                var tag = document.getElementsByClassName("mypara");
+                for(var i=0;i<tag.length;i++){
+                    tag[i].style.color = "red";
+                }
             }
         </script>
 
     </head>
     <body>
-        <p>Bolt Hacker</p>
-        <p>Bolt Hacker</p>
-        <p>Bolt Hacker</p>
-        <p>Bolt Hacker</p>
+        <p class="mypara">Bolt Hacker</p>
+        <p >Bolt Hacker</p>
+        <p class="mypara">Bolt Hacker</p>
+        <p class="mypara">Bolt Hacker</p>
         <button onclick="fn()" id="btn" >Click me</button>
     </body>
 
