@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            function setNewImage(){
+                document.getElementById("img").src = "1400967008479.jpeg";
+            }
+            function setOldImage(){
+                document.getElementById("img").src = "dog.jpeg";
+            }
+        </script>
+
+    </head>
+    <body>
+        <img id="img" onmouseover="setNewImage()" onmouseout="setOldImage()" src = "dog.jpeg" width = "300"/>
+        <!-- <button onclick="fn()" id="btn" >Click me</button> -->
+    </body>
+
+</html>
