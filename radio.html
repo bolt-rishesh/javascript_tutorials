@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            function fn(){
+                var rd1 = document.getElementById("rd1");
+                var rd2 = document.getElementById("rd2");
+                if(rd1.checked==true){
+                    alert(rd1.value);
+                }
+                else if(rd2.checked==true){
+                    alert(rd2.value);
+                }
+                else {
+                    alert("check any radio button");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <input id="rd1" name="grp" type="radio" value="username">username</input><br><br>
+        <input id="rd2" name="grp" type="radio" value="password">password</input><br><br>
+        <button onclick="fn()" id="btn">click me</button>
+    </body>
+
+</html>
