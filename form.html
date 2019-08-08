@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            function fn1(){
+                var user = document.getElementById("name");
+                var pass = document.getElementById("pass");
+                if(user.value.trim() == "" || pass.value.trim() == ""){
+                    alert("No blank values are allowed");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+                
+        </script>
+
+    </head>
+    <body>
+        <form onsubmit = "return fn1()" action = "default.html">
+            <input id="name" placeholder="username" type="text" required><br><br>
+            <input id="pass" placeholder="password" type="password" required><br><br>
+            <button type = "submit" id = "bt">submit</button>
+        </form>
+    </body>
+
+</html>
