@@ -6,7 +6,9 @@
                 var user = document.getElementById("name").value;
                 // var pass = document.getElementById("pass");
                 //regex // i makes case insensitive
-                var regx = /E00/i;
+                // [] gives range to regex ex - [a-z A-z 0-9]
+                // ^ -> use to remove characters
+                var regx = /[etr]00/i;
                 if(regx.test(user)){
                     // alert(regx.test(user));
                     true;    
