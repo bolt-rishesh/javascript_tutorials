@@ -7,8 +7,15 @@
                 // var pass = document.getElementById("pass");
                 //regex // i makes case insensitive
                 // [] gives range to regex ex - [a-z A-z 0-9]
-                // ^ -> use to remove characters
-                var regx = /[etr]00/i;
+                // ^ -> use to remove characters)
+                /*
+                    \d - match any digit (equal to [0-9])
+                    \w - match any word character (a-z,A-Z,0-9 & _)
+                    \s - match whitespaces character(eg - spaces & tabs 
+                    \t - match a tab only
+                */
+                var regx = /^[7-9]\d{9}$/;
+                // here ^ -> start point and $ -> end point.
                 if(regx.test(user)){
                     // alert(regx.test(user));
                     true;    
