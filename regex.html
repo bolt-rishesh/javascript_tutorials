@@ -14,7 +14,8 @@
                     \s - match whitespaces character(eg - spaces & tabs 
                     \t - match a tab only
                 */
-                var regx = /^[7-9]\d{9}$/;
+                // var regx = /^[7-9]\d{9}$/;
+                var regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
                 // here ^ -> start point and $ -> end point.
                 if(regx.test(user)){
                     // alert(regx.test(user));
