@@ -17,4 +17,11 @@
    hide, show and toggle
    slidehide, slideshow and slideToggle
 
+
+// DOM Manipulation:
 5. CallBack and Chaining Effect
+6. text(), html(), attr() and css();
+7. append(), after(), prepend(), before(), remove() and empty().
+8. addClass(), removeClass() and toggleClass().
+
+
