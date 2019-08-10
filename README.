@@ -1,0 +1,9 @@
+#Javascript
+
+1. Timer 
+	a. setTimeout() allows you to execute statements ONCE after an interval
+	b. clearTimeout() method clears a timer set with the setTimeout() method
+	c. setInterval() allows you to execute statements REPEATEDLY after an interval.
+	d. clearInterval() method clears a timer set with the setInterval() method.
+
+2. Image fadein and fadeout: use opacity.
