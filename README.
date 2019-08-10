@@ -7,3 +7,7 @@
 	d. clearInterval() method clears a timer set with the setInterval() method.
 
 2. Image fadein and fadeout: use opacity.
+
+3. $("div > p").fadeToggle(1000);
+	in this only paragraphs under divisions get fadded.
+	->li:even ->.myclass.first also any tags.
