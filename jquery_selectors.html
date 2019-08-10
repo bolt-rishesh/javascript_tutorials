@@ -11,9 +11,13 @@
     </body>
     <script src = "jq/jquery.js" type = "text/javascript"></script>
     <script>
-        function fn1(){
+        $(document).ready(function(){
+            $("#bt").click(fn1);
+            function fn1(){
             // for class use . and for id use #
-            $("#heading").fadeToggle(2000);
-        }
+                $("#heading").fadeToggle(2000);
+            }
+        });
+        
     </script>
 </html>
