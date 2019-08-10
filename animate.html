@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 id = "heading">Setting up jquery</h2>
+        <h2>Setting up jquery</h2>
+        <h2>Setting up jquery</h2>
+        <button id = "bt">click me</button>
+        <div >
+            <p id="cube" class="mycube">cube</p>
+        </div>
+        
+    </body>
+    <script src = "jq/jquery.js" type = "text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bt").click(function(){
+                $("#cube").animate({
+                    left:'150px',
+                    opacity:'1',
+                    width:'100px',
+                    height:'100px'
+                },1000)
+            });
+        });
+        
+    </script>
+</html>
