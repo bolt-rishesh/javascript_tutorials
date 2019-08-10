@@ -11,3 +11,8 @@
 3. $("div > p").fadeToggle(1000);
 	in this only paragraphs under divisions get fadded.
 	->li:even ->.myclass.first also any tags.
+
+// Effects in jquery
+4. fadein, fadeout and fadetoggle
+   hide, show and toggle
+   slidehide, slideshow and slideToggle
